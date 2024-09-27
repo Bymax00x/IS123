@@ -8,3 +8,7 @@ for (let i = 1; i < 1000; i++) {
 }
 
 console.log(sum); 
+
+function handleClick() {
+    console.log("Button was clicked!");
+}
