@@ -16,7 +16,7 @@ for (let i = 1; i < 1000; i++) {
 }
 
 console.log("Exercise one answer",total);
-alert('exercise one answer',total);
+alert('exercise one answer'+ total);
 }
 
 
