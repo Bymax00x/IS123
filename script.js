@@ -4,6 +4,9 @@ The sum of these multiples is 23.
 
 1. Find the sum of all the multiples of 3 or 5 below 1000. */
 
+
+
+function handleClick() {
 let total = 0;
 
 for (let i = 1; i < 1000; i++) {
@@ -12,10 +15,8 @@ for (let i = 1; i < 1000; i++) {
   }
 }
 
-console.log(total); 
-
-function handleClick() {
-    console.log("Button was clicked!");
+console.log("Exercise one answer",total);
+alert('exercise one answer',total);
 }
 
 
