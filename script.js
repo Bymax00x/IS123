@@ -19,4 +19,4 @@ console.log("Exercise one answer",total);
 alert('exercise one answer'+ total);
 }
 
-
+document.getElementById("myButton").addEventListener("click", handleClick);
