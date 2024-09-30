@@ -7,32 +7,35 @@ The sum of these multiples is 23.
 
 
 function exerciseOne() {
-let total = 0;
-
-for (let i = 1; i < 1000; i++) {
-  if (i % 3 === 0 || i % 5 === 0) {
-    total += i;
-  }
-}
-
-console.log("Exercise one answer",total);
-alert('exercise one answer'+ total);
-}
-
-function exerciseTwo(a,b,limit) {
   let total = 0;
   
-  for (let i = 1; i < limit; i++) {
-    if (i % a === 0 || i % b === 0) {
+  for (let i = 1; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
       total += i;
     }
   }
   
-  console.log("Exercise two answer",total);
-  alert('exercise two answer'+ total);
+  console.log("Exercise one answer",total);
+  alert('exercise one answer'+ total);
   }
-document.getElementById("bttnExe1").addEventListener("click", exerciseOne);
-document.getElementById("bttnExe2").addEventListener("click", exerciseTwo(3, 5, 1000));
-
-
-
+  
+  function exerciseTwo(a,b,limit) {
+    let total = 0;
+    
+    for (let i = 1; i < limit; i++) {
+      if (i % a === 0 || i % b === 0) {
+        total += i;
+      }
+    }
+    
+    console.log("Exercise two answer ",total);
+    alert('exercise two answer '+ total);
+    }
+  document.getElementById("bttnExe1").addEventListener("click", exerciseOne);
+  document.getElementById("bttnExe2").addEventListener("click", function() {
+      exerciseTwo(3, 5, 1000);
+  });
+  
+  
+  
+  
