@@ -6,7 +6,7 @@ The sum of these multiples is 23.
 
 
 
-function handleClick() {
+function exerciseOne() {
 let total = 0;
 
 for (let i = 1; i < 1000; i++) {
@@ -19,4 +19,20 @@ console.log("Exercise one answer",total);
 alert('exercise one answer'+ total);
 }
 
-document.getElementById("myButton").addEventListener("click", handleClick);
+function exerciseTwo(a,b,limit) {
+  let total = 0;
+  
+  for (let i = 1; i < limit; i++) {
+    if (a % 3 === 0 || b % 5 === 0) {
+      total += i;
+    }
+  }
+  
+  console.log("Exercise two answer",total);
+  alert('exercise two answer'+ total);
+  }
+document.getElementById("bttnExe1").addEventListener("click", exerciseOne);
+document.getElementById("bttnExe2").addEventListener("click", exerciseTwo);
+
+
+
