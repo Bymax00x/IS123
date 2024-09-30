@@ -23,7 +23,7 @@ function exerciseTwo(a,b,limit) {
   let total = 0;
   
   for (let i = 1; i < limit; i++) {
-    if (a % 3 === 0 || b % 5 === 0) {
+    if (i % a === 0 || i % b === 0) {
       total += i;
     }
   }
@@ -32,7 +32,7 @@ function exerciseTwo(a,b,limit) {
   alert('exercise two answer'+ total);
   }
 document.getElementById("bttnExe1").addEventListener("click", exerciseOne);
-document.getElementById("bttnExe2").addEventListener("click", exerciseTwo(3,5,1000));
+document.getElementById("bttnExe2").addEventListener("click", exerciseTwo(3, 5, 1000));
 
 
 
