@@ -32,7 +32,7 @@ function exerciseTwo(a,b,limit) {
   alert('exercise two answer'+ total);
   }
 document.getElementById("bttnExe1").addEventListener("click", exerciseOne);
-document.getElementById("bttnExe2").addEventListener("click", exerciseTwo);
+document.getElementById("bttnExe2").addEventListener("click", exerciseTwo(3,5,1000));
 
 
 
