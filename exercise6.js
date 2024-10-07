@@ -5,3 +5,16 @@
 // find the sum of all the multiples of elements of a in l
 
 
+function sumOfMultiplesExe6() {
+    // Get the input values
+    let a = document.getElementById('parama').value.split(',').map(Number);
+    let l = document.getElementById('paraml').value.split(',').map(Number);
+
+    // Function to calculate the sum of multiples
+    let sum = l.reduce((acc, num) => {
+        return (num % a[0] === 0 || num % a[1] === 0) ? acc + num : acc;
+    }, 0);
+
+    // Display the result
+    document.getElementById('result').innerText = 'Sum of multiples: ' + sum;
+}
