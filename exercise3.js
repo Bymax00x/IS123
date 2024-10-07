@@ -16,13 +16,9 @@ document.getElementById("bttnExe2").addEventListener("click", function () {
 });
 
 function findTotal() {
-  // Get user input values
   let a = parseInt(document.getElementById("a").value);
   let b = parseInt(document.getElementById("b").value);
   let n = parseInt(document.getElementById("n").value);
 
   exerciseTwo(a, b, n);
-
-  // Alert the result to the user
-  // alert("The sum of multiples of " + a + " or " + b + " below " + n + " is: " + sum);
 }
